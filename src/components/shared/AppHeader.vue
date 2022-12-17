@@ -5,12 +5,16 @@
 				<div class="md:ml-7 lg:ml-8">
 					<router-link to="/">Molina</router-link>
 				</div>
+				<div class="ml-14">
+					<ChooseLanguage />
+				</div>
 				<div class="sm:hidden">
 					<button @click="isOpen = !isOpen" type="button" class="focus:outline-none" aria-label="Hamburguer Menu">
 						<i data-feather="menu" class="text-ternary-dark"></i>
 					</button>
 				</div>
 			</div>
+
 			<AppHeaderLinks :isOpen="isOpen" />
 		</div>
 	</nav>
@@ -19,7 +23,8 @@
 
 import { ref } from 'vue';
 import feather from 'feather-icons';
-import AppHeaderLinks from './AppHeaderLinks.vue';
+import AppHeaderLinks from './AppHeaderLinks';
+import ChooseLanguage from './ChooseLanguage';
 
 const isOpen = ref(false);
 

@@ -1,16 +1,13 @@
 <template>
 	<section class="pt-4 sm:pt-6">
-		<div class="flex justify-center items-center mb-8">
-			<h1 class="w-full text-center text-4xl md:text-3xl xl:text-5xl text-center text-ternary-dark uppercase">
-				Hola, soy Domingo Molina
-			</h1>
-		</div>
 		<div class="text-center pt-10 mb-4">
-			<p class="font-general-normal text-3xl md:text-4xl lg:text-5xl text-secondary-dark mb-2">Proyectos</p>
+			<p class="font-general-semibold text-2xl md:text-4xl lg:text-5xl text-secondary-dark mb-2">
+				{{ language === 'en' ? 'Projects Portfolio' : 'Proyectos del Portafolio'}}
+			</p>
 		</div>
 		<div class="mt-10">
 			<h3 class="font-general-regular text-center text-secondary-dark text-md sm:text-xl font-normal mb-4">
-				Buscar proyectos por título o filtrar por categoría
+				{{ language === 'en' ? 'Search projects by title or filter by category' : 'Busca proyectos por título o filtra por categoría' }}
 			</h3>
 			<div class="flex justify-center items-center border-b border-primary-light pb-3 gap-2">
 				<div class="flex justify-between gap-2">
@@ -24,10 +21,10 @@
 						name="name"
 						type="search"
 						required=""
-						placeholder="Busca un proyecto"
+						:placeholder="language === 'en' ? 'Search Projects' : 'Busca un proyecto'"
 						aria-label="Name">
 				</div>
-				<ProjectsFilter @filter="selectedCategory = $event" />
+				<ProjectsFilter @filter="selectedCategory = $event" select="projects" />
 			</div>
 		</div>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 pt-10 gap-x-2 sm:gap-10">
@@ -36,28 +33,17 @@
 	</section>
 </template>
 
-<script>
+<script setup>
 
 import feather from 'feather-icons';
-
-export default {
-	name: 'ProjectsGrid',
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-}
-</script>
-
-<script setup>
+import { ref, computed, onMounted, onUpdated } from 'vue';
 
 import ProjectsFilter from './ProjectsFilter';
 import ProjectCard from './ProjectCard';
 import allProjects from '../../data/projects';
 
-import { ref, computed } from 'vue';
+import { useLanguage } from '@/composables/useLanguage';
+const { language } = useLanguage();
 
 const projects = ref(allProjects);
 const searchProject = ref('');
@@ -83,11 +69,27 @@ function filterProjectsByCategory() {
 
 function filterProjectsBySearch() {
 	let project = new RegExp(searchProject.value, 'i');
-	return projects.value.filter((element) => element.title.match(project));
+	return projects.value.filter((element) => element.title[language.value].match(project));
 }
+
+onMounted(() => {
+	feather.replace();
+});
+
+onUpdated(() => {
+	feather.replace();
+});
 
 </script>
 
 <style scoped>
+
+.img-cover
+{
+	width: 96px;
+	height: 64px;
+	background: #fff;
+	border: solid 2px gray;
+}
 
 </style>

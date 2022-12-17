@@ -1,81 +1,56 @@
 const data = [
 	{
 		id: 1,
-		title: 'CFD Project 1',
-		category: 'CFD',
-		img: '/images/cfd-project.png',
-		details: {
-			date: '20 Oct 2022',
-			tags: 'CFD'
+		title: {
+			en: 'TYPE A SPRAY NOZZLE',
+			es: 'BOQUILLA DE ASPERSIÓN TIPO A',
 		},
-		technologies: ['Tech 1', 'Tech 2', 'Tech 3'],
-		blocks: [
-			{
-				blockId: 1,
-				content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem delectus tempore eveniet repellat eaque quaerat dolorem asperiores numquam iste, fugiat expedita, quam ea reiciendis tenetur ad, totam quibusdam praesentium!'
-			},
-			{
-				blockId: 2,
-				content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga, perferendis quod adipisci pariatur tempore deserunt laborum, a eligendi nam accusamus totam delectus molestiae minima iure ipsum. Architecto, deserunt quisquam.'
-			},
-			{
-				blockId: 3,
-				content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis dicta in alias libero nobis laboriosam, ipsa temporibus excepturi placeat debitis voluptas commodi provblockIdent adipisci a voluptatibus maxime iusto distinctio.'
-			},
-
-		],
-	},
-	{
-		id: 2,
-		title: 'FEA Project 1',
-		category: 'FEA',
-		img: '/images/fea-project.png',
-		details: {
-			date: '20 Oct 2022',
-			tags: 'FEA'
-		},
-		technologies: ['SolidWorks'],
-		blocks: [
-			{
-				blockId: 1,
-				content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem delectus tempore eveniet repellat eaque quaerat dolorem asperiores numquam iste, fugiat expedita, quam ea reiciendis tenetur ad, totam quibusdam praesentium!'
-			},
-			{
-				blockId: 2,
-				content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga, perferendis quod adipisci pariatur tempore deserunt laborum, a eligendi nam accusamus totam delectus molestiae minima iure ipsum. Architecto, deserunt quisquam.'
-			},
-			{
-				blockId: 3,
-				content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis dicta in alias libero nobis laboriosam, ipsa temporibus excepturi placeat debitis voluptas commodi provblockIdent adipisci a voluptatibus maxime iusto distinctio.'
-			},
-
-		],
-	},
-	{
-		id: 3,
-		title: 'CAD Project 1',
 		category: 'CAD',
-		img: '/images/cad-project.png',
+		img: '/images/project-1/Spray Nozzle Render.jpg',
 		details: {
 			date: '20 Oct 2022',
-			tags: 'CAD'
+			tags: ['3D Modeling', 'ANSYS SpaceClaim', '3D Rendering', 'Detail Drawing', 'Keyshot']
 		},
-		technologies: ['SolidWorks'],
 		blocks: [
 			{
 				blockId: 1,
-				content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem delectus tempore eveniet repellat eaque quaerat dolorem asperiores numquam iste, fugiat expedita, quam ea reiciendis tenetur ad, totam quibusdam praesentium!'
+				content: {
+					en: '3D modeling of a spray nozzle type A used in washing processes, cooling systems, cleaning and water curtain.',
+					es: 'Modelado 3D de una boquilla de aspersion tipo A utilizada en procesos de lavado, sistemas de refrigeración, limpieza y cortina de agua.',
+				},
 			},
 			{
 				blockId: 2,
-				content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga, perferendis quod adipisci pariatur tempore deserunt laborum, a eligendi nam accusamus totam delectus molestiae minima iure ipsum. Architecto, deserunt quisquam.'
+				content: {
+					en: 'The 3D CAD model was made with ANSYS SpaceClaim 19.',
+					es: 'El modelo CAD 3D se hizo con ANSYS SpaceClaim 19.',
+				}
 			},
 			{
 				blockId: 3,
-				content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis dicta in alias libero nobis laboriosam, ipsa temporibus excepturi placeat debitis voluptas commodi provblockIdent adipisci a voluptatibus maxime iusto distinctio.'
+				content: {
+					en: 'The metallic appearance rendering was done with Keyshot 10.',
+					es: 'El renderizado de apariencia metálica se hizo con Keyshot 10.',
+				}
 			},
-
 		],
+		images: [
+			{
+				imgId: 1,
+				src: '/images/project-1/Spray Nozzle Render.jpg',
+				alt: 'render image'
+			},
+			{
+				imgId: 2,
+				src: '/images/project-1/TYPE A SPRAY NOZZLE.jpg',
+				alt: 'drawing'
+			}
+		],
+		hasModel: true,
+		model: {
+			type: 'stl',
+			src: '/models/project-1/model.fbx',
+		}
 	},
 ];
 

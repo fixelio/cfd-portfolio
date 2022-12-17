@@ -3,12 +3,12 @@
 		<div>
 			<img
 				:src="props.project.img"
-				:alt="props.project.title"
-				class="rounded-t-sm border-2 border-primary-light"
+				:alt="props.project.title[language]"
+				class="rounded-t-sm border-2"
 			>
 		</div>
 		<div class="text-center px-4 py-6 leading-2">
-			<p class="font-general-semibold text-xl text-ternary-dark font-semibold mb-2">{{ props.project.title }}</p>
+			<p class="font-general-semibold text-xl text-ternary-dark font-semibold mb-2">{{ props.project.title[language] }}</p>
 			<p class="font-general-medium text-md text-ternary-dark">{{ props.project.category }}</p>
 		</div>
 	</router-link>
@@ -17,10 +17,13 @@
 <script setup>
 
 import { defineProps } from 'vue';
+import { useLanguage } from '@/composables/useLanguage';
 
 const props = defineProps({
 	project: Object
 });
+
+const { language } = useLanguage();
 
 </script>
 

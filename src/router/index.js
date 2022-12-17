@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomePage from '../views/HomePage.vue';
-import SingleProject from '../views/SingleProject.vue';
+import HomePage from '../views/HomePage';
+import SingleProject from '../views/SingleProject';
+import AboutMe from '../views/AboutMe';
 
 const routes = [
 	{
@@ -19,6 +20,14 @@ const routes = [
 			title: 'Domingo - Single Project'
 		},
 	},
+	{
+		path: '/about',
+		name: 'AboutMe',
+		component: AboutMe,
+		meta: {
+			title: 'Domingo - About'
+		}
+	}
 ];
 
 const router = createRouter({
