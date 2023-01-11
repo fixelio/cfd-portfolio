@@ -27,7 +27,7 @@
 				<ProjectsFilter @filter="selectedCategory = $event" select="projects" />
 			</div>
 		</div>
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 pt-10 gap-x-2 sm:gap-10">
+		<div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-x-2 sm:gap-10">
 			<ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
 		</div>
 	</section>

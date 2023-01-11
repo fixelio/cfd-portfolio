@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-10 sm:mt-20">
+	<div class="mx-5 sm:mt-20">
 		<ProjectHeader :project="singleProject" />
 		
 		<div class="flex items-center">

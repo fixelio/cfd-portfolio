@@ -9,55 +9,91 @@
   <link rel="stylesheet" href="./src/assets/css/app.css">
 </head>
 <body>
-  <nav id="nav" class="sm:container sm:mx-auto">
-		<div class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6">
-			<div class="flex justify-between items-center px-4 sm:px-0">
-				<div class="md:ml-7 lg:ml-8">
-					<a href="#">Molina</a>
-				</div>
-			</div>
-		</div>
-  </nav>
-  <div class="container mx-auto">
-    <section class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10">
-      <div class="w-full md:w-1/3 text-left">
-        <h1 class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase">
-          Hello, I am Domingo
-        </h1>
-        <p
-          class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400"
-        >
-          Computational Fluid Dynamics Engineer
-        </p>
-      </div>
-      <div class="w-full md:2/3 text-right float-right">
-        <img src="./src/assets/images/developer.svg" alt="Guigo">
-      </div>
-    </section>
-    <section class="pt-4 sm:pt-6 mb-5 sm:mb-8">      
-      <div class="text-center pt-10 mb-4">
-        <p class="font-general-normal text-3xl md:text-4xl lg:text-5xl text-secondary-dark mb-2">Proyectos</p>
-      </div>
-      <div class="mt-10">
-        <h3 class="font-general-regular text-center text-secondary-dark text-md sm:text-xl font-normal mb-4">
-          Buscar proyectos por título o filtrar por categoría
-        </h3>
-        <div class="flex justify-center items-center border-b border-primary-light pb-3 gap-2">
-          <div class="flex justify-between gap-2">
-            <input
-              class="font-general-medium pl-3 pr-1 sm:px-4 py-2 border-1 border-gray-200 rounded-lg text-sm sm:text-md bg-secondary-light text-primary-dark"
-              id="name"
-              name="name"
-              type="search"
-              required=""
-              placeholder="Busca un proyecto"
-              aria-label="Name"
-            >
-          </div>
+  <!--
+{
+  "name": "cfd-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "feather-icons": "^4.29.0",
+    "flowbite": "^1.5.3",
+    "three": "^0.147.0",
+    "three-trackballcontrols": "^0.9.0",
+    "vue": "^3.2.13",
+    "vue-backtotop": "^1.6.1",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
+
+
+  -->
+  <main>
+    <section class="">
+      <div id="default-carousel" class="relative m-6" data-carousel="static">
+        <!-- carouesel wrapper -->
+        <div class="relative overflow-hidden h-96 md:h-[32rem]">
+          <div class="hidden rounded-lg duration-400 ease-in-out bg-contain bg-center bg-no-repeat" data-carousel-item="active" style="background-image: url('./public/images/project-1/Spray Nozzle Render.jpg')"></div>
+          <div class="hidden rounded-lg duration-400 ease-in-out bg-contain bg-center bg-no-repeat" data-carousel-item style="background-image: url('./public/images/project-1/TYPE A SPRAY NOZZLE.jpg')"></div>
         </div>
+        <!-- Sliders indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-16 md:bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        </div>
+        <!-- Sliders controls -->
+        <button type="button" class="absolute top-0 left-0 md:left-32 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 md:right-32 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
       </div>
     </section>
-  </div>
+  </main>
   <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
 </body>
 </html>

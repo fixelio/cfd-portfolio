@@ -5,7 +5,6 @@ import './assets/css/app.css';
 import BackToTop from 'vue-backtotop';
 
 import './index.css';
-import 'flowbite';
 
 const feather = require('feather-icons');
 feather.replace();

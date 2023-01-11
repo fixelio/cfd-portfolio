@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="mx-4 md:mx-20 lg:mx-24">
 		<AppHeader />
 
 		<router-view v-slot="{ Component }">

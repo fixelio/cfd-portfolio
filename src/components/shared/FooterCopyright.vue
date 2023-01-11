@@ -10,8 +10,8 @@
 
 import { ref } from 'vue';
 
-const copyrightDate = ref('2022');
-const projectName = ref('Domingo Molina - CFD Portfolio');
+const copyrightDate = ref('2023');
+const projectName = ref('Domingo Molina - Portfolio');
 	
 </script>
 
