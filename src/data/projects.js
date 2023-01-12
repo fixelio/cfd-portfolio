@@ -9,7 +9,7 @@ const data = [
 		img: '"/images/project-1/Vista-1.png"',
 		details: {
 			date: '20 Oct 2022',
-			tags: ['3D CAD Modeling', 'ANSYS SpaceClaim', '3D Rendering', 'Detail Drawing', 'Keyshot']
+			tags: ['3D CAD Modeling', 'SolidWorks']
 		},
 		blocks: [
 			{
@@ -18,20 +18,6 @@ const data = [
 					en: '3D modeling of a spray nozzle type A used in washing processes, cooling systems, cleaning and water curtain.',
 					es: 'Modelado 3D de una boquilla de aspersion tipo A utilizada en procesos de lavado, sistemas de refrigeración, limpieza y cortina de agua.',
 				},
-			},
-			{
-				blockId: 2,
-				content: {
-					en: 'The 3D CAD model was made with ANSYS SpaceClaim 19.',
-					es: 'El modelo CAD 3D se hizo con ANSYS SpaceClaim 19.',
-				}
-			},
-			{
-				blockId: 3,
-				content: {
-					en: 'The metallic appearance rendering was done with Keyshot 10.',
-					es: 'El renderizado de apariencia metálica se hizo con Keyshot 10.',
-				}
 			},
 		],
 		images: [
@@ -175,6 +161,114 @@ const data = [
 			src: '/models/project-3/thumbtack.fbx',
 		}
 	},
+	{
+		id: 4,
+		title: {
+			en: 'DOUBLE-ENDED WRENCH',
+			es: 'LLAVE INGLESA DE DOBLE PUNTA',
+		},
+		category: 'CAD',
+		img: '"/images/project-4/Vista-1.png"',
+		details: {
+			date: '04 Nov 2022',
+			tags: ['3D CAD Modeling', 'SolidWorks']
+		},
+		blocks: [
+			{
+				blockId: 1,
+				content: {
+					en: 'This project consisted of designing a 3D model of a 3/4\'\' double-ended wrench based on a technical drawing.',
+					es: 'Este proyecto consistió en diseñar un modelo 3D de una llave inglesa de doble punta de 3/4\'\' partiendo del dibujo técnico.',
+				},
+			},
+		],
+		images: [
+			{
+				id: 1,
+				src: '"/images/project-4/Vista-1.png"',
+				alt: 'view 1'
+			},
+			{
+				id: 2,
+				src: '"/images/project-4/Vista-2.png"',
+				alt: 'view'
+			},
+			{
+				id: 3,
+				src: '"/images/project-4/Vista-3.png"',
+				alt: 'view'
+			},
+			{
+				id: 4,
+				src: '"/images/project-4/Vista-4.png"',
+				alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/project-4/Vista-5.png"',
+        alt: 'view'
+      },
+		],
+		hasModel: true,
+		model: {
+			type: 'stl',
+			src: '/models/project-4/llave-inglesa-de-doble-punta.fbx',
+		}
+	},
+  {
+    id: 5,
+    title: {
+      en: 'SMARTPHONE HOLDER',
+      es: 'SOPORTE PARA SMARTPHONE',
+    },
+    category: 'CAD',
+    img: '"/images/project-5/Vista-2.png"',
+    details: {
+      date: '07 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of modeling a simple smartphone holder, like the ones you see in stores. The design, simple and elegant, guarantees good stability.',
+          es: 'Este proyecto consistió en modelar un sencillo soporte para smartphone, como los que se ven en las tiendas. El diseño, sencillo y elegante, garantiza buena estabilidad.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-5/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-5/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-5/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-5/Vista-4.png"',
+        alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/project-5/Vista-5.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-4/soporte-para-smartphone-1.fbx',
+    }
+  },
 ];
 
 export default data;
