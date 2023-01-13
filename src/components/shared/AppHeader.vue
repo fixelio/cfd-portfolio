@@ -3,7 +3,7 @@
 		<div class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6">
 			<div class="flex justify-between items-center px-4 sm:px-0">
 				<div class="md:ml-7 lg:ml-8">
-					<router-link to="/">Molina</router-link>
+					<router-link to="/">Domingo</router-link>
 				</div>
 				<div class="ml-14">
 					<ChooseLanguage />

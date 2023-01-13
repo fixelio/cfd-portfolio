@@ -66,7 +66,7 @@ const data = [
 	{
 		id: 2,
 		title: {
-      en: '1\'\' INCH SPANNER WRENCH',
+      en: '1\'\' SPANNER WRENCH',
 			es: 'LLAVE DE TUERCAS DE 1 PULGADA',
 		},
 		category: 'CAD',
@@ -266,7 +266,174 @@ const data = [
     hasModel: true,
     model: {
       type: 'stl',
-      src: '/models/project-4/soporte-para-smartphone-1.fbx',
+      src: '/models/project-5/soporte-para-smartphone-1.fbx',
+    }
+  },
+  {
+    id: 6,
+    title: {
+      en: 'FUNNEL',
+      es: 'EMBUDO',
+    },
+    category: 'CAD',
+    img: '"/images/project-6/Vista-1.png"',
+    details: {
+      date: '09 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted in modeling in 3D a funnel to transfer liquids from the real model. Simple and functional.',
+          es: 'Este proyecto consistió en modelar en 3D un embudo para traspasar líquidos a partir del modelo real. Sencillo y funcional.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-6/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-6/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-6/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-6/Vista-4.png"',
+        alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/project-6/Vista-5.png"',
+        alt: 'view'
+      },
+      {
+        id: 6,
+        src: '"/images/project-6/Vista-6.png"',
+        alt: 'view'
+      },
+      {
+        id: 7,
+        src: '"/images/project-6/Vista-7.png"',
+        alt: 'view'
+      },
+      {
+        id: 8,
+        src: '"/images/project-6/Vista-8.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-6/embudo.fbx',
+    }
+  },
+  {
+    id: 7,
+    title: {
+      en: 'FLASK',
+      es: 'FRASCO',
+    },
+    category: 'CAD',
+    img: '"/images/project-7/Vista-1.png"',
+    details: {
+      date: '11 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of making a 3D model of a small glass flask.',
+          es: 'Este proyecto consistió en realizar el modelo 3D de un pequeño frasco de cristal.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-7/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-7/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-7/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-7/Vista-4.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-7/Frasco.fbx',
+    }
+  },
+  {
+    id: 8,
+    title: {
+      en: 'CRYSTAL GLASS',
+      es: 'COPA DE CRISTAL',
+    },
+    category: 'CAD',
+    img: '"/images/project-8/Vista-1.png"',
+    details: {
+      date: '14 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted in making a 3D model of a beautiful glass cup. Starting from technical drawings, an elegant and functional result is achieved.',
+          es: 'Este proyecto consistió en hacer el modelo 3D de una bella copa de cristal. Partiendo de dibujos técnicos se consigue un resultado elegante y funcional.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-8/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-8/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-8/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-8/Vista-4.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-8/Copa.fbx',
     }
   },
 ];
