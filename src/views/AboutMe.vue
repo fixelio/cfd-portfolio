@@ -2,9 +2,9 @@
   <div class="mx-10">
     <div class="block sm:flex sm:gap-10 mt-10 sm:mt-20">
       <div class="w-full sm:w-1/4 mb-7 sm:mb-0">
-        <img src="@/assets/images/foto-perfil.jpg" alt="Domingo Molina foto perfil" class="rounded-xl w-96">
       </div>
       <div class="w-full sm:w-3/4 text-left">
+        <img src="@/assets/images/foto-perfil.jpg" alt="Domingo Molina foto perfil" class="rounded-xl w-96 mb-5">
         <p
           v-for="bio in bios"
           :key="bio.id"

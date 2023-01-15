@@ -1,4 +1,4 @@
-const data = [
+export const projects = [
 	{
 		id: 1,
 		title: {
@@ -436,6 +436,358 @@ const data = [
       src: '/models/project-8/Copa.fbx',
     }
   },
+  {
+    id: 9,
+    title: {
+      en: 'BOTTLE',
+      es: 'BOTELLA',
+    },
+    category: 'CAD',
+    img: '"/images/project-9/Vista-1.png"',
+    details: {
+      date: '16 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of modeling a glass bottle in 3D.',
+          es: 'Este proyecto consistió en modelar una botella de cristal en 3D.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-9/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-9/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-9/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-9/Vista-4.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-9/Botella.fbx',
+    }
+  },
+  {
+    id: 10,
+    title: {
+      en: 'PITCHER',
+      es: 'JARRA',
+    },
+    category: 'CAD',
+    img: '"/images/project-10/Vista-1.png"',
+    details: {
+      date: '19 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of making a 3D model of a pitcher, based on the technical drawings.',
+          es: 'Este proyecto consistió en realizar el modelo de una jarra en 3D, a partir de los dibujos técnicos.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-10/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-10/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-10/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-10/Vista-4.png"',
+        alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/project-10/Vista-5.png"',
+        alt: 'view'
+      },
+      {
+        id: 6,
+        src: '"/images/project-10/Vista-6.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-10/Jarra.fbx',
+    }
+  },
+  {
+    id: 11,
+    title: {
+      en: 'SPOON',
+      es: 'CUCHARA',
+    },
+    category: 'CAD',
+    img: '"/images/project-11/Vista-1.png"',
+    details: {
+      date: '20 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of making a 3D model of a spoon, based on the technical drawings.',
+          es: 'Este proyecto consistió en realizar el modelo de una cuchara en 3D, a partir de los dibujos técnicos.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/project-11/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/project-11/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/project-11/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/project-11/Vista-4.png"',
+        alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/project-11/Vista-5.png"',
+        alt: 'view'
+      },
+      {
+        id: 6,
+        src: '"/images/project-11/Vista-6.png"',
+        alt: 'view'
+      },
+      {
+        id: 7,
+        src: '"/images/project-11/Vista-7.png"',
+        alt: 'view'
+      },
+      {
+        id: 8,
+        src: '"/images/project-11/Vista-8.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/project-11/Cuchara.fbx',
+    }
+  },
+  {
+    id: 12,
+    title: {
+      en: 'AUDIO JACK 3,5 mm',
+      es: 'AUDIO JACK 3,5 mm',
+    },
+    category: 'CAD',
+    img: '"/images/audio-jack/Vista-1.png"',
+    details: {
+      date: '21 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of modeling a standard 3.5 mm audio jack in 3D from technical drawings. The result is a beautiful design identical to headphones worldwide.',
+          es: 'Este proyecto consistió en modelar un audio jack estándar de 3,5 mm en 3D a partir de los dibujos técnicos. El resultado es un bonito diseño idéntico al de los auriculares en todo el mundo.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/audio-jack/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/audio-jack/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/audio-jack/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/audio-jack/Vista-4.png"',
+        alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/audio-jack/Vista-5.png"',
+        alt: 'view'
+      },
+      {
+        id: 6,
+        src: '"/images/audio-jack/Vista-6.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/audio-jack/audio-jack.fbx',
+    }
+  },
+  {
+    id: 13,
+    title: {
+      en: 'B-TYPE PLUG',
+      es: 'ENCHUFE TIPO B',
+    },
+    category: 'CAD',
+    img: '"/images/enchufe/Vista-1.png"',
+    details: {
+      date: '23 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of modeling a standard B-type plug used in many household appliances around the world. The part was designed from their technical drawings.',
+          es: 'Este proyecto consistió en modelar un enchufe tipo B estándar usado en muchos electrodomésticos en todo el mundo. La pieza se diseñó a partir de sus dibujos técnicos.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/enchufe/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/enchufe/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/enchufe/Vista-3.png"',
+        alt: 'view'
+      },
+      {
+        id: 4,
+        src: '"/images/enchufe/Vista-4.png"',
+        alt: 'view'
+      },
+      {
+        id: 5,
+        src: '"/images/enchufe/Vista-5.png"',
+        alt: 'view'
+      },
+      {
+        id: 6,
+        src: '"/images/enchufe/Vista-6.png"',
+        alt: 'view'
+      },
+      {
+        id: 7,
+        src: '"/images/enchufe/Vista-7.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/enchufe/enchufe.fbx',
+    }
+  },
+  {
+    id: 14,
+    title: {
+      en: 'SCISSORS',
+      es: 'TIJERAS',
+    },
+    category: 'CAD',
+    img: '"/images/tijeras/Vista-1.png"',
+    details: {
+      date: '25 Nov 2022',
+      tags: ['3D CAD Modeling', 'SolidWorks']
+    },
+    blocks: [
+      {
+        blockId: 1,
+        content: {
+          en: 'This project consisted of modeling a pair of scissors from the technical drawings. After modeling each part separately, they were put together in a nice assembly as shown here.',
+          es: 'Este proyecto consistió en modelar unas tijeras a partir de los dibujos técnicos. Tras modelar cada parte por separado, se unieron en un bonito ensamble como se muestra aquí.',
+        },
+      },
+    ],
+    images: [
+      {
+        id: 1,
+        src: '"/images/tijeras/Vista-1.png"',
+        alt: 'view 1'
+      },
+      {
+        id: 2,
+        src: '"/images/tijeras/Vista-2.png"',
+        alt: 'view'
+      },
+      {
+        id: 3,
+        src: '"/images/tijeras/Vista-3.png"',
+        alt: 'view'
+      },
+    ],
+    hasModel: true,
+    model: {
+      type: 'stl',
+      src: '/models/tijeras/tijeras.fbx',
+    }
+  },
 ];
 
-export default data;
+export const indexedProjects = projects.reduce((acc, el) => ({
+  ...acc,
+  [el.id]: el,
+}), {});
+
+export const projectsOrder = [
+  1, 12, 13, 2, 5, 6, 7, 8,
+  9, 10, 11, 3, 4, 14
+];

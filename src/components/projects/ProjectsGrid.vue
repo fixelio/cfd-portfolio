@@ -2,7 +2,7 @@
 	<section class="pt-4 sm:pt-6">
 		<div class="text-center pt-10 mb-4">
 			<p class="font-general-semibold text-2xl md:text-4xl lg:text-5xl text-secondary-dark mb-2">
-				{{ language === 'en' ? 'Projects Portfolio' : 'Proyectos del Portafolio'}}
+				{{ language === 'en' ? 'Projects' : 'Proyectos'}}
 			</p>
 		</div>
 		<div class="mt-10">
@@ -28,7 +28,12 @@
 			</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 mt-20 gap-x-2 sm:gap-10">
-			<ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
+
+			<ProjectCard
+				v-for="projectId in filteredProjects"
+				:key="projectId"
+				:project="indexedProjects[projectId]"
+				/>
 		</div>
 	</section>
 </template>
@@ -40,36 +45,41 @@ import { ref, computed, onMounted, onUpdated } from 'vue';
 
 import ProjectsFilter from './ProjectsFilter';
 import ProjectCard from './ProjectCard';
-import allProjects from '../../data/projects';
+import { indexedProjects, projectsOrder } from '../../data/projects';
 
 import { useLanguage } from '@/composables/useLanguage';
 const { language } = useLanguage();
 
-const projects = ref(allProjects);
+const projectsOrderRef = ref(projectsOrder);
+
 const searchProject = ref('');
 const selectedCategory = ref('');
 
 const filteredProjects = computed({
 	get() {
 		if(selectedCategory.value)
-				return filterProjectsByCategory();
+			return filterProjectsByCategory();
 
 		if(searchProject.value)
 			return filterProjectsBySearch();
 
-		return projects.value;
+		return projectsOrderRef.value;
 	}
 });
 
 function filterProjectsByCategory() {
-	return projects.value.filter((project) => {
+	return projectsOrderRef.value.filter((projectId) => {
+		const project = indexedProjects[projectId];
 		return project.category.includes(selectedCategory.value);
 	});
 }
 
 function filterProjectsBySearch() {
-	let project = new RegExp(searchProject.value, 'i');
-	return projects.value.filter((element) => element.title[language.value].match(project));
+	let projectRegex = new RegExp(searchProject.value, 'i');
+	return projectsOrderRef.value.filter((projectId) => {
+		const project = indexedProjects[projectId];
+		return project.title[language.value].match(projectRegex);
+	});
 }
 
 onMounted(() => {

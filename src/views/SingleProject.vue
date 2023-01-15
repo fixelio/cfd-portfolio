@@ -36,15 +36,11 @@ import { useLanguage } from '@/composables/useLanguage';
 
 import GeometryCard from '@/components/geometries/GeometryCard';
 import ProjectHeader from '../components/projects/ProjectHeader';
-import projects from '../data/projects.js';
+import { indexedProjects } from '../data/projects.js';
 
 const route = useRoute();
-
-const filtered = projects.filter(p => {
-	return p.id === Number(route.params.id);
-});
-
-const singleProject = reactive(filtered[0]);
+const project = indexedProjects[Number(route.params.id)];
+const singleProject = reactive(project);
 
 const { language } = useLanguage();
 
